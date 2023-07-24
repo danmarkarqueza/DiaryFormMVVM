@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4170C6302A6E6916005019C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C62F2A6E6916005019C9 /* AppDelegate.swift */; };
+		4170C6322A6E6916005019C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6312A6E6916005019C9 /* SceneDelegate.swift */; };
+		4170C6342A6E6916005019C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6332A6E6916005019C9 /* ViewController.swift */; };
+		4170C6372A6E6916005019C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4170C6352A6E6916005019C9 /* Main.storyboard */; };
+		4170C6392A6E6917005019C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4170C6382A6E6917005019C9 /* Assets.xcassets */; };
+		4170C63C2A6E6917005019C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4170C63A2A6E6917005019C9 /* LaunchScreen.storyboard */; };
+		4170C64D2A6E6B45005019C9 /* NewDiaryFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C64C2A6E6B45005019C9 /* NewDiaryFormViewController.swift */; };
+		4170C6512A6E7082005019C9 /* AddPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6502A6E7082005019C9 /* AddPhotoCollectionViewCell.swift */; };
+		4170C6532A6E7093005019C9 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6522A6E7093005019C9 /* CommentsTableViewCell.swift */; };
+		4170C6552A6E709D005019C9 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6542A6E709D005019C9 /* DetailsTableViewCell.swift */; };
+		4170C6572A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6562A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift */; };
+		4170C6592A6E7115005019C9 /* NewDiaryFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6582A6E7115005019C9 /* NewDiaryFormTableViewController.swift */; };
+		4170C65E2A6E75EE005019C9 /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4170C65D2A6E75EE005019C9 /* CommentsCell.xib */; };
+		4170C6602A6E75FB005019C9 /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4170C65F2A6E75FB005019C9 /* DetailsCell.xib */; };
+		4170C6622A6E761A005019C9 /* LinkToEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4170C6612A6E761A005019C9 /* LinkToEventCell.xib */; };
+		4170C6652A6E7E6E005019C9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6642A6E7E6E005019C9 /* CardView.swift */; };
+		4170C6692A6E83E9005019C9 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6682A6E83E9005019C9 /* UnderlineTextField.swift */; };
+		4170C66B2A6E884D005019C9 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C66A2A6E884D005019C9 /* UIColorHex.swift */; };
+		4170C66D2A6EAA27005019C9 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C66C2A6EAA27005019C9 /* LocationView.swift */; };
+		4170C66F2A6EAAF3005019C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C66E2A6EAAF3005019C9 /* HeaderView.swift */; };
+		4170C6712A6EBCAF005019C9 /* AddPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6702A6EBCAF005019C9 /* AddPhotosTableViewCell.swift */; };
+		4170C6732A6EBCBA005019C9 /* AddPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4170C6722A6EBCBA005019C9 /* AddPhotosCell.xib */; };
+		840929E7896B5DB4B0C9594C /* Pods_DiaryFormMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196C85BE3A715DA94960EC2E /* Pods_DiaryFormMVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		196C85BE3A715DA94960EC2E /* Pods_DiaryFormMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryFormMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4170C62C2A6E6916005019C9 /* DiaryFormMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryFormMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4170C62F2A6E6916005019C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4170C6312A6E6916005019C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4170C6332A6E6916005019C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4170C6362A6E6916005019C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4170C6382A6E6917005019C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4170C63B2A6E6917005019C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4170C63D2A6E6917005019C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4170C64C2A6E6B45005019C9 /* NewDiaryFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryFormViewController.swift; sourceTree = "<group>"; };
+		4170C6502A6E7082005019C9 /* AddPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		4170C6522A6E7093005019C9 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		4170C6542A6E709D005019C9 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		4170C6562A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToExistingEventTableViewCell.swift; sourceTree = "<group>"; };
+		4170C6582A6E7115005019C9 /* NewDiaryFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryFormTableViewController.swift; sourceTree = "<group>"; };
+		4170C65D2A6E75EE005019C9 /* CommentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
+		4170C65F2A6E75FB005019C9 /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
+		4170C6612A6E761A005019C9 /* LinkToEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkToEventCell.xib; sourceTree = "<group>"; };
+		4170C6642A6E7E6E005019C9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4170C6682A6E83E9005019C9 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		4170C66A2A6E884D005019C9 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		4170C66C2A6EAA27005019C9 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		4170C66E2A6EAAF3005019C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		4170C6702A6EBCAF005019C9 /* AddPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotosTableViewCell.swift; sourceTree = "<group>"; };
+		4170C6722A6EBCBA005019C9 /* AddPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotosCell.xib; sourceTree = "<group>"; };
+		7550400581E7EEA3D454C130 /* Pods-DiaryFormMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryFormMVVM.debug.xcconfig"; path = "Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD41736A11F53CBF7C58286 /* Pods-DiaryFormMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryFormMVVM.release.xcconfig"; path = "Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4170C6292A6E6916005019C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840929E7896B5DB4B0C9594C /* Pods_DiaryFormMVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D272F38F30EFBEFE6A60F61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7550400581E7EEA3D454C130 /* Pods-DiaryFormMVVM.debug.xcconfig */,
+				9FD41736A11F53CBF7C58286 /* Pods-DiaryFormMVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4170C6232A6E6916005019C9 = {
+			isa = PBXGroup;
+			children = (
+				4170C62E2A6E6916005019C9 /* DiaryFormMVVM */,
+				4170C62D2A6E6916005019C9 /* Products */,
+				1D272F38F30EFBEFE6A60F61 /* Pods */,
+				5B219F8224E0DC036950092A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4170C62D2A6E6916005019C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4170C62C2A6E6916005019C9 /* DiaryFormMVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4170C62E2A6E6916005019C9 /* DiaryFormMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6432A6E6937005019C9 /* View Controllers */,
+				4170C6462A6E6965005019C9 /* View Models */,
+				4170C6442A6E6947005019C9 /* Views */,
+				4170C6452A6E6951005019C9 /* Models */,
+				4170C6492A6E6988005019C9 /* Model Controllers */,
+				4170C6472A6E6970005019C9 /* Constants */,
+				4170C64A2A6E69A1005019C9 /* Extensions */,
+				4170C64B2A6E69B1005019C9 /* Resources */,
+				4170C62F2A6E6916005019C9 /* AppDelegate.swift */,
+				4170C6312A6E6916005019C9 /* SceneDelegate.swift */,
+				4170C6332A6E6916005019C9 /* ViewController.swift */,
+				4170C6382A6E6917005019C9 /* Assets.xcassets */,
+				4170C63A2A6E6917005019C9 /* LaunchScreen.storyboard */,
+				4170C63D2A6E6917005019C9 /* Info.plist */,
+			);
+			path = DiaryFormMVVM;
+			sourceTree = "<group>";
+		};
+		4170C6432A6E6937005019C9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4170C65A2A6E711D005019C9 /* Table View Controllers */,
+				4170C64C2A6E6B45005019C9 /* NewDiaryFormViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4170C6442A6E6947005019C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4170C64F2A6E7051005019C9 /* Collection View Cell */,
+				4170C64E2A6E7047005019C9 /* Table View Cell */,
+				4170C6632A6E7E5D005019C9 /* Designables */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4170C6452A6E6951005019C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4170C6462A6E6965005019C9 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		4170C6472A6E6970005019C9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4170C6492A6E6988005019C9 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		4170C64A2A6E69A1005019C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6682A6E83E9005019C9 /* UnderlineTextField.swift */,
+				4170C66A2A6E884D005019C9 /* UIColorHex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4170C64B2A6E69B1005019C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4170C65C2A6E75DD005019C9 /* Xib */,
+				4170C65B2A6E74FA005019C9 /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4170C64E2A6E7047005019C9 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6702A6EBCAF005019C9 /* AddPhotosTableViewCell.swift */,
+				4170C6522A6E7093005019C9 /* CommentsTableViewCell.swift */,
+				4170C6542A6E709D005019C9 /* DetailsTableViewCell.swift */,
+				4170C6562A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		4170C64F2A6E7051005019C9 /* Collection View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6502A6E7082005019C9 /* AddPhotoCollectionViewCell.swift */,
+			);
+			path = "Collection View Cell";
+			sourceTree = "<group>";
+		};
+		4170C65A2A6E711D005019C9 /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6582A6E7115005019C9 /* NewDiaryFormTableViewController.swift */,
+			);
+			path = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		4170C65B2A6E74FA005019C9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6352A6E6916005019C9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		4170C65C2A6E75DD005019C9 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6722A6EBCBA005019C9 /* AddPhotosCell.xib */,
+				4170C65D2A6E75EE005019C9 /* CommentsCell.xib */,
+				4170C65F2A6E75FB005019C9 /* DetailsCell.xib */,
+				4170C6612A6E761A005019C9 /* LinkToEventCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		4170C6632A6E7E5D005019C9 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				4170C6642A6E7E6E005019C9 /* CardView.swift */,
+				4170C66C2A6EAA27005019C9 /* LocationView.swift */,
+				4170C66E2A6EAAF3005019C9 /* HeaderView.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		5B219F8224E0DC036950092A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				196C85BE3A715DA94960EC2E /* Pods_DiaryFormMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4170C62B2A6E6916005019C9 /* DiaryFormMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4170C6402A6E6917005019C9 /* Build configuration list for PBXNativeTarget "DiaryFormMVVM" */;
+			buildPhases = (
+				1FA1E37791100EB45F2B51C0 /* [CP] Check Pods Manifest.lock */,
+				4170C6282A6E6916005019C9 /* Sources */,
+				4170C6292A6E6916005019C9 /* Frameworks */,
+				4170C62A2A6E6916005019C9 /* Resources */,
+				228D19D631B849B48C9ACF16 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiaryFormMVVM;
+			productName = DiaryFormMVVM;
+			productReference = 4170C62C2A6E6916005019C9 /* DiaryFormMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4170C6242A6E6916005019C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4170C62B2A6E6916005019C9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 4170C6272A6E6916005019C9 /* Build configuration list for PBXProject "DiaryFormMVVM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4170C6232A6E6916005019C9;
+			productRefGroup = 4170C62D2A6E6916005019C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4170C62B2A6E6916005019C9 /* DiaryFormMVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4170C62A2A6E6916005019C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4170C6602A6E75FB005019C9 /* DetailsCell.xib in Resources */,
+				4170C63C2A6E6917005019C9 /* LaunchScreen.storyboard in Resources */,
+				4170C6622A6E761A005019C9 /* LinkToEventCell.xib in Resources */,
+				4170C6392A6E6917005019C9 /* Assets.xcassets in Resources */,
+				4170C6372A6E6916005019C9 /* Main.storyboard in Resources */,
+				4170C6732A6EBCBA005019C9 /* AddPhotosCell.xib in Resources */,
+				4170C65E2A6E75EE005019C9 /* CommentsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA1E37791100EB45F2B51C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiaryFormMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		228D19D631B849B48C9ACF16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4170C6282A6E6916005019C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4170C66D2A6EAA27005019C9 /* LocationView.swift in Sources */,
+				4170C6342A6E6916005019C9 /* ViewController.swift in Sources */,
+				4170C6532A6E7093005019C9 /* CommentsTableViewCell.swift in Sources */,
+				4170C6572A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift in Sources */,
+				4170C6592A6E7115005019C9 /* NewDiaryFormTableViewController.swift in Sources */,
+				4170C6692A6E83E9005019C9 /* UnderlineTextField.swift in Sources */,
+				4170C6652A6E7E6E005019C9 /* CardView.swift in Sources */,
+				4170C6302A6E6916005019C9 /* AppDelegate.swift in Sources */,
+				4170C64D2A6E6B45005019C9 /* NewDiaryFormViewController.swift in Sources */,
+				4170C6512A6E7082005019C9 /* AddPhotoCollectionViewCell.swift in Sources */,
+				4170C66B2A6E884D005019C9 /* UIColorHex.swift in Sources */,
+				4170C6322A6E6916005019C9 /* SceneDelegate.swift in Sources */,
+				4170C6552A6E709D005019C9 /* DetailsTableViewCell.swift in Sources */,
+				4170C66F2A6EAAF3005019C9 /* HeaderView.swift in Sources */,
+				4170C6712A6EBCAF005019C9 /* AddPhotosTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4170C6352A6E6916005019C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4170C6362A6E6916005019C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4170C63A2A6E6917005019C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4170C63B2A6E6917005019C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4170C63E2A6E6917005019C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4170C63F2A6E6917005019C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4170C6412A6E6917005019C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7550400581E7EEA3D454C130 /* Pods-DiaryFormMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3CMU2WHAZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiaryFormMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineappledesigner.DiaryFormMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4170C6422A6E6917005019C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD41736A11F53CBF7C58286 /* Pods-DiaryFormMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3CMU2WHAZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiaryFormMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineappledesigner.DiaryFormMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4170C6272A6E6916005019C9 /* Build configuration list for PBXProject "DiaryFormMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4170C63E2A6E6917005019C9 /* Debug */,
+				4170C63F2A6E6917005019C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4170C6402A6E6917005019C9 /* Build configuration list for PBXNativeTarget "DiaryFormMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4170C6412A6E6917005019C9 /* Debug */,
+				4170C6422A6E6917005019C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4170C6242A6E6916005019C9 /* Project object */;
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LinkToExistingEventTableViewCell" customModule="DiaryFormMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvq-Lt-wQI" customClass="CardView" customModule="DiaryFormMVVM" customModuleProvider="target">
+                    <rect key="frame" x="10" y="69" width="355" height="187"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link to existing event?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9O-TT-cL3">
+                            <rect key="frame" x="20" y="20" width="271" height="66"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tr2-pe-Lec">
+                            <rect key="frame" x="20" y="106" width="315" height="1"/>
+                            <color key="backgroundColor" white="0.90246212120000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="rqa-gU-Y4D"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmq-vp-hGV" customClass="UnderLineTextField" customModule="DiaryFormMVVM" customModuleProvider="target">
+                            <rect key="frame" x="20" y="127" width="315" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="sbD-RD-Hq6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select an event"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                    <color key="value" red="0.64313725490196072" green="0.83529411764705885" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="dropdownIcon" value="chevron.down" catalog="system"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-v0-71A">
+                            <rect key="frame" x="311" y="41" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="H8f-lu-vt0"/>
+                                <constraint firstAttribute="width" constant="24" id="sat-X0-Gmj"/>
+                            </constraints>
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="C9O-TT-cL3" firstAttribute="leading" secondItem="Bvq-Lt-wQI" secondAttribute="leading" constant="20" id="0gM-0g-Y8k"/>
+                        <constraint firstItem="dmq-vp-hGV" firstAttribute="leading" secondItem="Bvq-Lt-wQI" secondAttribute="leading" constant="20" id="13D-uq-Nk3"/>
+                        <constraint firstItem="C9O-TT-cL3" firstAttribute="top" secondItem="Bvq-Lt-wQI" secondAttribute="top" constant="20" id="1Mb-ts-bpE"/>
+                        <constraint firstAttribute="bottom" secondItem="dmq-vp-hGV" secondAttribute="bottom" constant="20" id="1UV-O8-2j5"/>
+                        <constraint firstItem="dmq-vp-hGV" firstAttribute="top" secondItem="Tr2-pe-Lec" secondAttribute="bottom" constant="20" id="3py-V7-5OO"/>
+                        <constraint firstAttribute="trailing" secondItem="dmq-vp-hGV" secondAttribute="trailing" constant="20" id="QDa-SK-7HW"/>
+                        <constraint firstAttribute="trailing" secondItem="5k3-v0-71A" secondAttribute="trailing" constant="20" id="SpY-El-zbk"/>
+                        <constraint firstItem="Tr2-pe-Lec" firstAttribute="leading" secondItem="Bvq-Lt-wQI" secondAttribute="leading" constant="20" id="W9Y-0Y-tWa"/>
+                        <constraint firstAttribute="trailing" secondItem="Tr2-pe-Lec" secondAttribute="trailing" constant="20" id="Zsh-Hv-e5b"/>
+                        <constraint firstItem="Tr2-pe-Lec" firstAttribute="top" secondItem="C9O-TT-cL3" secondAttribute="bottom" constant="20" id="fmN-Fx-uow"/>
+                        <constraint firstItem="5k3-v0-71A" firstAttribute="centerY" secondItem="C9O-TT-cL3" secondAttribute="centerY" id="q8e-fH-53N"/>
+                        <constraint firstItem="5k3-v0-71A" firstAttribute="leading" secondItem="C9O-TT-cL3" secondAttribute="trailing" constant="20" id="zRE-di-Zmd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bvq-Lt-wQI" secondAttribute="bottom" constant="10" id="Daa-sD-fMu"/>
+                <constraint firstItem="Bvq-Lt-wQI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="M32-zv-uwW"/>
+                <constraint firstItem="Bvq-Lt-wQI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="ukd-PS-mJt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bvq-Lt-wQI" secondAttribute="trailing" constant="10" id="wiX-C0-GJi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="5k3-v0-71A" id="zL8-Fc-tr2"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

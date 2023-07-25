@@ -7,5 +7,7 @@ target 'DiaryFormMVVM' do
 
   # Pods for DiaryFormMVVM
     pod 'IQKeyboardManagerSwift'
+    pod 'Wormholy'
+    pod 'Alamofire'
 
 end

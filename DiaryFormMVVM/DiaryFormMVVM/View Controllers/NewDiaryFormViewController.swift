@@ -43,7 +43,7 @@ class NewDiaryFormViewController: UIViewController {
 
         // Add the close button to the title bar
         let closeButton = UIButton(type: .system)
-        closeButton.setTitle("X", for: .normal) // Customize the button title as needed
+        closeButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         closeButton.tintColor = UIColor.white
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
@@ -78,8 +78,6 @@ class NewDiaryFormViewController: UIViewController {
         ])
         
 
-        
-        
         // Set up containerView to occupy the whole screen
         containerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(containerView)
@@ -108,57 +106,6 @@ class NewDiaryFormViewController: UIViewController {
        
 
     }
-//
-//
-//    private func setupTitleBarView() {
-//        // Create the custom title bar view
-//        let titleBarView = UIView()
-//        titleBarView.backgroundColor = UIColor.black // Customize the background color as needed
-//        titleBarView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(titleBarView)
-//
-//
-//        // Set up constraints for the title bar view to cover the top of the screen
-//        let safeGuide = view.safeAreaLayoutGuide
-//        NSLayoutConstraint.activate([
-//            titleBarView.topAnchor.constraint(equalTo: safeGuide.topAnchor),
-//            titleBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            titleBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//            titleBarView.heightAnchor.constraint(equalToConstant: 60) // Set the desired height of the title bar
-//        ])
-//
-//        // Add the "New Diary" label to the title bar
-//        let titleLabel = UILabel()
-//        titleLabel.text = "New Diary"
-//        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold) // Customize the font and size as needed
-//        titleLabel.textColor = UIColor.white // Customize the text color as needed
-//        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-//        titleBarView.addSubview(titleLabel)
-//
-//
-//        // Add the close button to the title bar
-//        let closeButton = UIButton(type: .system)
-//        closeButton.setTitle("X", for: .normal) // Customize the button title as needed
-//        closeButton.tintColor = UIColor.white
-//        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
-//        closeButton.translatesAutoresizingMaskIntoConstraints = false
-//        titleBarView.addSubview(closeButton)
-//
-//
-//        // Set up constraints for the close button to align it to the left
-//        NSLayoutConstraint.activate([
-//            closeButton.leadingAnchor.constraint(equalTo: titleBarView.leadingAnchor, constant: 16),
-//            closeButton.centerYAnchor.constraint(equalTo: titleBarView.centerYAnchor)
-//        ])
-//
-//
-//        // Set up constraints for the title label to align it to the right of the close button
-//        NSLayoutConstraint.activate([
-//            titleLabel.leadingAnchor.constraint(equalTo: closeButton.trailingAnchor, constant: 15),
-//            titleLabel.centerYAnchor.constraint(equalTo: titleBarView.centerYAnchor)
-//        ])
-
-//    }
     
     @objc func closeButtonTapped() {
         // Handle the action when the close button is tapped

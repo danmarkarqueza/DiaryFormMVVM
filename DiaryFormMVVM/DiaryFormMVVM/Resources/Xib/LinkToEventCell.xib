@@ -87,6 +87,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="checkBoxButton" destination="5k3-v0-71A" id="zL8-Fc-tr2"/>
+                <outlet property="eventTextField" destination="dmq-vp-hGV" id="KYF-oD-Ect"/>
             </connections>
             <point key="canvasLocation" x="140" y="21"/>
         </view>

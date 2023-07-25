@@ -12,7 +12,7 @@ class LocationView: UIView {
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "ic_location")
-        imageView.tintColor = .gray // You can customize the icon's color
+        imageView.tintColor = .gray
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -20,7 +20,7 @@ class LocationView: UIView {
     private let addressLabel: UILabel = {
         let label = UILabel()
         label.text = "20041075 | TAP-NS TAP-North Strathfield "
-        label.textColor = .black // You can customize the label's text color
+        label.textColor = .black 
         label.font = UIFont.systemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 2

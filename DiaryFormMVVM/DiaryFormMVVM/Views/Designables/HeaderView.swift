@@ -13,7 +13,7 @@ class HeaderView: UIView {
         let label = UILabel()
         label.text = "Add to site diary"
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = .black // Customize the title label text color
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -21,7 +21,7 @@ class HeaderView: UIView {
     private let helpButton: UIButton = {
         let button = UIButton(type: .system)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        button.tintColor = .blue // Customize the help button color
+        button.tintColor = .blue
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "questionmark.circle.fill"), for: .normal)
         button.tintColor = UIColor.gray
@@ -51,7 +51,7 @@ class HeaderView: UIView {
             helpButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             helpButton.widthAnchor.constraint(equalToConstant: 48),
             helpButton.heightAnchor.constraint(equalToConstant: 48),
-            helpButton.bottomAnchor.constraint(equalTo: titleLabel.bottomAnchor) // Align the button's bottom with the title label's bottom
+            helpButton.bottomAnchor.constraint(equalTo: titleLabel.bottomAnchor) 
         ])
     }
 }

@@ -11,7 +11,6 @@ import PhotosUI
 class AddPhotosTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate, PHPickerViewControllerDelegate {
 
 
-    
     @IBOutlet weak var checkBoxButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var addPhotoButton: UIButton!
@@ -43,9 +42,6 @@ class AddPhotosTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColle
             updateCheckboxImage()
         }
     }
-
-
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -14,7 +14,6 @@
 		4170C6392A6E6917005019C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4170C6382A6E6917005019C9 /* Assets.xcassets */; };
 		4170C63C2A6E6917005019C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4170C63A2A6E6917005019C9 /* LaunchScreen.storyboard */; };
 		4170C64D2A6E6B45005019C9 /* NewDiaryFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C64C2A6E6B45005019C9 /* NewDiaryFormViewController.swift */; };
-		4170C6512A6E7082005019C9 /* AddPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6502A6E7082005019C9 /* AddPhotoCollectionViewCell.swift */; };
 		4170C6532A6E7093005019C9 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6522A6E7093005019C9 /* CommentsTableViewCell.swift */; };
 		4170C6552A6E709D005019C9 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6542A6E709D005019C9 /* DetailsTableViewCell.swift */; };
 		4170C6572A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6562A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift */; };
@@ -29,6 +28,11 @@
 		4170C66F2A6EAAF3005019C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C66E2A6EAAF3005019C9 /* HeaderView.swift */; };
 		4170C6712A6EBCAF005019C9 /* AddPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170C6702A6EBCAF005019C9 /* AddPhotosTableViewCell.swift */; };
 		4170C6732A6EBCBA005019C9 /* AddPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4170C6722A6EBCBA005019C9 /* AddPhotosCell.xib */; };
+		41FF134F2A706B3400C5A0BC /* NewDiaryFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF134E2A706B3400C5A0BC /* NewDiaryFormViewModel.swift */; };
+		41FF13512A706B4D00C5A0BC /* DiaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF13502A706B4D00C5A0BC /* DiaryResponse.swift */; };
+		41FF13532A706C9B00C5A0BC /* DiaryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF13522A706C9B00C5A0BC /* DiaryRequest.swift */; };
+		41FF13552A706DEB00C5A0BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF13542A706DEB00C5A0BC /* Constants.swift */; };
+		41FF13572A706EDE00C5A0BC /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF13562A706EDE00C5A0BC /* ImageUtils.swift */; };
 		840929E7896B5DB4B0C9594C /* Pods_DiaryFormMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196C85BE3A715DA94960EC2E /* Pods_DiaryFormMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +47,6 @@
 		4170C63B2A6E6917005019C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4170C63D2A6E6917005019C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4170C64C2A6E6B45005019C9 /* NewDiaryFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryFormViewController.swift; sourceTree = "<group>"; };
-		4170C6502A6E7082005019C9 /* AddPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4170C6522A6E7093005019C9 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
 		4170C6542A6E709D005019C9 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		4170C6562A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToExistingEventTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,6 +61,11 @@
 		4170C66E2A6EAAF3005019C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4170C6702A6EBCAF005019C9 /* AddPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotosTableViewCell.swift; sourceTree = "<group>"; };
 		4170C6722A6EBCBA005019C9 /* AddPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotosCell.xib; sourceTree = "<group>"; };
+		41FF134E2A706B3400C5A0BC /* NewDiaryFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryFormViewModel.swift; sourceTree = "<group>"; };
+		41FF13502A706B4D00C5A0BC /* DiaryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryResponse.swift; sourceTree = "<group>"; };
+		41FF13522A706C9B00C5A0BC /* DiaryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryRequest.swift; sourceTree = "<group>"; };
+		41FF13542A706DEB00C5A0BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		41FF13562A706EDE00C5A0BC /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		7550400581E7EEA3D454C130 /* Pods-DiaryFormMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryFormMVVM.debug.xcconfig"; path = "Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		9FD41736A11F53CBF7C58286 /* Pods-DiaryFormMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryFormMVVM.release.xcconfig"; path = "Target Support Files/Pods-DiaryFormMVVM/Pods-DiaryFormMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +116,6 @@
 				4170C6462A6E6965005019C9 /* View Models */,
 				4170C6442A6E6947005019C9 /* Views */,
 				4170C6452A6E6951005019C9 /* Models */,
-				4170C6492A6E6988005019C9 /* Model Controllers */,
 				4170C6472A6E6970005019C9 /* Constants */,
 				4170C64A2A6E69A1005019C9 /* Extensions */,
 				4170C64B2A6E69B1005019C9 /* Resources */,
@@ -134,7 +141,6 @@
 		4170C6442A6E6947005019C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4170C64F2A6E7051005019C9 /* Collection View Cell */,
 				4170C64E2A6E7047005019C9 /* Table View Cell */,
 				4170C6632A6E7E5D005019C9 /* Designables */,
 			);
@@ -144,6 +150,8 @@
 		4170C6452A6E6951005019C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				41FF13502A706B4D00C5A0BC /* DiaryResponse.swift */,
+				41FF13522A706C9B00C5A0BC /* DiaryRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 		4170C6462A6E6965005019C9 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				41FF134E2A706B3400C5A0BC /* NewDiaryFormViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -158,15 +167,9 @@
 		4170C6472A6E6970005019C9 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				41FF13542A706DEB00C5A0BC /* Constants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		4170C6492A6E6988005019C9 /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		4170C64A2A6E69A1005019C9 /* Extensions */ = {
@@ -174,6 +177,7 @@
 			children = (
 				4170C6682A6E83E9005019C9 /* UnderlineTextField.swift */,
 				4170C66A2A6E884D005019C9 /* UIColorHex.swift */,
+				41FF13562A706EDE00C5A0BC /* ImageUtils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,14 +200,6 @@
 				4170C6562A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift */,
 			);
 			path = "Table View Cell";
-			sourceTree = "<group>";
-		};
-		4170C64F2A6E7051005019C9 /* Collection View Cell */ = {
-			isa = PBXGroup;
-			children = (
-				4170C6502A6E7082005019C9 /* AddPhotoCollectionViewCell.swift */,
-			);
-			path = "Collection View Cell";
 			sourceTree = "<group>";
 		};
 		4170C65A2A6E711D005019C9 /* Table View Controllers */ = {
@@ -370,21 +366,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FF13572A706EDE00C5A0BC /* ImageUtils.swift in Sources */,
+				41FF134F2A706B3400C5A0BC /* NewDiaryFormViewModel.swift in Sources */,
 				4170C66D2A6EAA27005019C9 /* LocationView.swift in Sources */,
 				4170C6342A6E6916005019C9 /* ViewController.swift in Sources */,
 				4170C6532A6E7093005019C9 /* CommentsTableViewCell.swift in Sources */,
 				4170C6572A6E70B0005019C9 /* LinkToExistingEventTableViewCell.swift in Sources */,
+				41FF13512A706B4D00C5A0BC /* DiaryResponse.swift in Sources */,
 				4170C6592A6E7115005019C9 /* NewDiaryFormTableViewController.swift in Sources */,
 				4170C6692A6E83E9005019C9 /* UnderlineTextField.swift in Sources */,
 				4170C6652A6E7E6E005019C9 /* CardView.swift in Sources */,
 				4170C6302A6E6916005019C9 /* AppDelegate.swift in Sources */,
 				4170C64D2A6E6B45005019C9 /* NewDiaryFormViewController.swift in Sources */,
-				4170C6512A6E7082005019C9 /* AddPhotoCollectionViewCell.swift in Sources */,
 				4170C66B2A6E884D005019C9 /* UIColorHex.swift in Sources */,
 				4170C6322A6E6916005019C9 /* SceneDelegate.swift in Sources */,
+				41FF13532A706C9B00C5A0BC /* DiaryRequest.swift in Sources */,
 				4170C6552A6E709D005019C9 /* DetailsTableViewCell.swift in Sources */,
 				4170C66F2A6EAAF3005019C9 /* HeaderView.swift in Sources */,
 				4170C6712A6EBCAF005019C9 /* AddPhotosTableViewCell.swift in Sources */,
+				41FF13552A706DEB00C5A0BC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

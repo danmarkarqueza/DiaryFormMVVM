@@ -9,58 +9,85 @@ import UIKit
 
 class DetailsTableViewCell: UITableViewCell, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
     
+    let screenWidth = UIScreen.main.bounds.width
+    
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var areaTextField: UITextField!
     @IBOutlet weak var categoryTextField: UITextField!
     @IBOutlet weak var tagsTextField: UITextField!
     
-    // Create a UIPickerView instance
-    private let pickerView = UIPickerView()
-    
-    // Create a UIDatePicker instance
-    private let datePicker = UIDatePicker()
-    
-    // Create arrays for area and task category options
-    let areaOptions = ["Option 1", "Option 2", "Option 3"] // Add your area options here
-    let taskCategoryOptions = ["Task 1", "Task 2", "Task 3"] // Add your task category options here
+    var areaPickerView = UIPickerView()
+    var taskCategoryPickerView = UIPickerView()
+    private lazy var datePickerView: UIDatePicker = {
+      let datePicker = UIDatePicker(frame: .zero)
+      datePicker.datePickerMode = .date
+      datePicker.timeZone = TimeZone.current
+      return datePicker
+    }()
 
-    
 
-    
+    let areaOptions = ["Option 1", "Option 2", "Option 3"]
+    let taskCategoryOptions = ["Task 1", "Task 2", "Task 3"]
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // Set the text field delegates to self
-        dateTextField.delegate = self
-        areaTextField.delegate = self
-        categoryTextField.delegate = self
-        
-        dateTextField.tag = 1
-        areaTextField.tag = 2
-        categoryTextField.tag = 3
+        areaPickerView.dataSource = self
+        areaPickerView.delegate = self
+        areaTextField.inputView = areaPickerView
+        areaTextField.inputAccessoryView = createToolbar(with: #selector(doneButtonTappedForArea))
 
-        // Set the input view of the text fields to the pickerView
-        // Set the input view of the date text field to the datePicker
-        dateTextField.inputView = datePicker
-        areaTextField.inputView = pickerView
-        categoryTextField.inputView = pickerView
-
-        // Configure the picker view
-        pickerView.delegate = self
-        pickerView.dataSource = self
+        taskCategoryPickerView.dataSource = self
+        taskCategoryPickerView.delegate = self
+        categoryTextField.inputView = taskCategoryPickerView
+        categoryTextField.inputAccessoryView = createToolbar(with: #selector(doneButtonTappedForTaskCategory))
         
-        // Configure the date picker
-        datePicker.datePickerMode = .date
-        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
-     
+        datePickerView = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 200))
+        datePickerView.datePickerMode = .date
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        dateTextField.inputView = datePickerView
+        dateTextField.inputAccessoryView = createToolbar(with: #selector(doneButtonTappedForDate))
+        
+        if #available(iOS 14, *) {
+            datePickerView.preferredDatePickerStyle = .wheels
+        }
     }
     
-    // Action method to handle date picker value changes
-    @objc func datePickerValueChanged(_ sender: UIDatePicker) {
+    @objc func doneButtonTappedForArea() {
+        areaTextField.resignFirstResponder()
+    }
+
+    @objc func doneButtonTappedForTaskCategory() {
+        categoryTextField.resignFirstResponder()
+    }
+
+    @objc func doneButtonTappedForDate() {
+        dateTextField.resignFirstResponder()
+    }
+
+    func createToolbar(with selector: Selector) -> UIToolbar {
+        let toolbar = UIToolbar()
+        toolbar.barStyle = .default
+        toolbar.isTranslucent = true
+        toolbar.tintColor = .black
+        toolbar.sizeToFit()
+
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: selector)
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+
+        toolbar.setItems([spaceButton, doneButton], animated: false)
+        toolbar.isUserInteractionEnabled = true
+
+        return toolbar
+    }
+
+    
+    @objc func datePickerValueChanged() {
         let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
         dateFormatter.dateFormat = "yyyy-MM-dd" // Choose your desired date format
-        dateTextField.text = dateFormatter.string(from: sender.date)
+        dateTextField.text = dateFormatter.string(from: datePickerView.date)
     }
     
     
@@ -68,50 +95,39 @@ class DetailsTableViewCell: UITableViewCell, UITextFieldDelegate, UIPickerViewDe
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
-    // Number of components in the picker view (always 1 for single column)
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        if (pickerView.tag == 1) {
-            
-        } else if (pickerView.tag == 2) {
-            return 1
-        } else if (pickerView.tag == 3) {
             return 1
         }
-        
-        return 0
-    }
     
-    // Number of rows in the picker view (depends on the text field)
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView.tag == 2 {
+        if pickerView == areaPickerView {
             return areaOptions.count
-        } else if pickerView.tag == 3 {
+        } else if pickerView == taskCategoryPickerView {
             return taskCategoryOptions.count
         }
         return 0
     }
     
-    // Title for each row in the picker view (depends on the text field)
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView.tag == 2 {
+        if pickerView == areaPickerView {
             return areaOptions[row]
-        } else if pickerView.tag == 3 {
+        } else if pickerView == taskCategoryPickerView {
             return taskCategoryOptions[row]
         }
         return nil
     }
-
-    // Handle the selection of a row in the picker view (set the text field's text)
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView.tag == 2 {
+        if pickerView == areaPickerView {
             areaTextField.text = areaOptions[row]
-        } else if pickerView.tag == 3 {
+        } else if pickerView == taskCategoryPickerView {
             categoryTextField.text = taskCategoryOptions[row]
         }
     }
+    
+    
     
 }
 

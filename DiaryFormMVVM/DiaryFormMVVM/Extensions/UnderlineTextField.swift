@@ -36,7 +36,6 @@ class UnderLineTextField: UITextField, UITextFieldDelegate {
         }
     }
 
-    // Add @IBInspectable attribute for the placeholder text
     @IBInspectable open var placeholderText: String? {
         didSet {
             self.attributedPlaceholder = NSAttributedString(string: placeholderText ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
@@ -54,7 +53,6 @@ class UnderLineTextField: UITextField, UITextFieldDelegate {
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
         
-        // Call updateRightView to set the initial rightView
         updateRightView()
     }
 
@@ -70,19 +68,19 @@ class UnderLineTextField: UITextField, UITextFieldDelegate {
     
     // Function to update the rightView with the icon image
     private func updateRightView() {
-        // Check if the dropdownIcon is set
+       
         if let icon = dropdownIcon {
             let iconImageView = UIImageView(image: icon)
             iconImageView.contentMode = .center
-            iconImageView.frame = CGRect(x: 0, y: 0, width: 20, height: 20) // Adjust the size of the icon as needed
+            iconImageView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
             iconImageView.tintColor = UIColor.lightGray
-            // Set the rightView of the text field
+           
             self.rightView = iconImageView
-            self.rightViewMode = .always // Show the right view always
+            self.rightViewMode = .always
         } else {
-            // If the dropdownIcon is nil, remove the rightView
+           
             self.rightView = nil
-            self.rightViewMode = .never // Hide the right view
+            self.rightViewMode = .never 
         }
     }
 
